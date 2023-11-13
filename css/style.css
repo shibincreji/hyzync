@@ -117,31 +117,33 @@ body {
   background: #00bfff;
 }
 
-.header {
+ .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 1rem 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  position: fixed;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .header .title {
     font-size: small;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
+    color: black;
 }
 
-.header .black-text {
-  color: black;
+.header .red-text {
+  color: red;
 }
 
 .header .blue-text {
-  color: #002e5f;
+  color: blue;
 }
 
 .header .logo img {
@@ -181,7 +183,7 @@ body {
   cursor: pointer;
   font-size: 3rem;
   display: none;
-}
+} 
 
 .home {
   min-height: 100vh;
@@ -308,6 +310,7 @@ body {
   overflow: hidden !important;
 } */
 
+/* Markpoint */
 
 .about .row .content .left {
   text-align: left;
@@ -330,7 +333,7 @@ body {
 
 .about .row .content p {
   font-size: 2rem;
-  color: #333;
+  color: black;
   padding: 1rem 0;
 }
 .pt-5 .container .row .section-head p {
@@ -427,7 +430,7 @@ body {
 .counters {
   background-image: url(../images/img2.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: absolute;
   background-repeat: no-repeat;
   color: #fff;
   padding: 40px 20px;
@@ -690,11 +693,12 @@ body {
   min-width: 100vw;
   min-height: 95vh;
   text-align: center;
-  background-color: #222;
+  /* background-color:  */
+  /* teamcolor */
 }
 
 .team .heading {
-  color: #00bfff;
+  color: black;
 }
 
 .team .heading::before,
@@ -712,7 +716,7 @@ body {
 .team .row .card {
   height: 35rem;
   width: 25rem;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   margin: 5rem 5rem;
   position: relative;
@@ -742,7 +746,7 @@ body {
 
 .team .row .card .info h3 {
   font-size: 2rem;
-  color: #333;
+  color: #f9f8f8;
 }
 
 .team .row .card .info span {
@@ -795,13 +799,13 @@ body {
 }
 
 .team .row .card::before {
-  background: #00bfff;
+  /* background: #00bfff; */
   top: -3rem;
   right: -4rem;
 }
 
 .team .row .card::after {
-  background: #ccc;
+  /* background: #ccc; */
   bottom: -3rem;
   left: -4rem;
 }
@@ -823,7 +827,7 @@ body {
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 10px;
-  background: #fff;
+  background: white;
   box-shadow: 0px 0px 10px 0px #666;
 }
 
@@ -946,11 +950,11 @@ body {
 .footer {
   position: relative;
   padding: 0 0 30px 0;
-  background: #333;
+  background: black;
 }
 
 .footer .footer-top {
-  background: #c5dcd8;
+  background: black;
   padding: 60px 0 30px 0;
 }
 
@@ -1085,7 +1089,7 @@ body {
 }
 
 .back-to-top {
-  position: fixed;
+  position: absolute;
   display: none;
   background-color: #00bfff;
   color: #ffffff;
@@ -1101,11 +1105,11 @@ body {
 }
 
 .back-to-top i {
-  color: #ffffff;
+  color: white;
 }
 
 .back-to-top i:hover {
-  color: black;
+  color: white;
 }
 
 .faq {
@@ -1205,7 +1209,7 @@ body {
   }
 
   .header .navbar {
-    position: fixed;
+    position: absolute;
     top: -120%;
     left: 0;
     height: auto;
@@ -1239,12 +1243,12 @@ body {
   }
 
   .home h1 {
-    color: #fff;
+    color: black;
     font-size: 4rem;
   }
 
   .home h2 {
-    color: #fff;
+    color: black;
     font-size: 2rem;
   }
 
@@ -1309,6 +1313,7 @@ body {
   .contact {
     text-align: center;
     align-items: center;
+    background: white;
   }
 
   .contact .heading {
@@ -1324,7 +1329,7 @@ body {
     flex-wrap: wrap;
     padding: 10px;
     border-radius: 10px;
-    background: #fff;
+    background: white;
     box-shadow: 0px 0px 10px 0px #666;
   }
 
