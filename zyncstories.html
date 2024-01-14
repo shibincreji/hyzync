@@ -53,67 +53,80 @@
 				</div>
 			</div>
 
-			<!-- Slider main container -->
-			<div class="swiper stories-slider">
-				<!-- Additional required wrapper -->
-				<div class="swiper-wrapper">
-					<!-- Slides -->
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-1.webp" type="image/webp"><img src="img/stories/photo-1.jpg" alt="Ships of the desert"></picture>
-						</div>
-						<div class="stories-slide__text">Ships of the desert</div>
-					</div>
+<!-- Slider main container -->
+<div class="swiper stories-slider">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-2.webp" type="image/webp"><img src="img/stories/photo-2.jpg" alt="Admire the spire"></picture>
-						</div>
-						<div class="stories-slide__text">Admire the spire</div>
-					</div>
+        <!-- Slide 1 -->
+        <div class="swiper-slide stories-slide">
+            <div class="stories-slide__card" style="background: linear-gradient(to bottom, #262626, #3f3f3f); border-radius: 15px; padding: 30px; height: 300px; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="stories-slide__text" style="color: #fff;">Slide 1</div>
+                    <hr style="border: 1px solid #fff; margin: 10px 0;">
+                    <p style="color: #fff; font-size: 16px;">This is a description of the first slide. You can add more details here.</p>
+                </div>
+                <button onclick="redirectToPage('page1')" style="color: #fff; background-color: #f17e14; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">View Details</button>
+            </div>
+        </div>
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-3.webp" type="image/webp"><img src="img/stories/photo-3.jpg" alt="The East is a delicate matter"></picture>
-						</div>
-						<div class="stories-slide__text">The East is a delicate matter</div>
-					</div>
+		<!-- Slide 2 -->
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-4.webp" type="image/webp"><img src="img/stories/photo-4.jpg" alt="Night City Lights"></picture>
-						</div>
-						<div class="stories-slide__text">Night City Lights</div>
-					</div>
+		<div class="swiper-slide stories-slide">
+            <div class="stories-slide__card" style="background: linear-gradient(to bottom, #262626, #3f3f3f); border-radius: 15px; padding: 30px; height: 300px; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="stories-slide__text" style="color: #fff;">Slide 2</div>
+                    <hr style="border: 1px solid #fff; margin: 10px 0;">
+                    <p style="color: #fff; font-size: 16px;">This is a description of the first slide. You can add more details here.</p>
+                </div>
+                <button onclick="redirectToPage('page1')" style="color: #fff; background-color: #f17e14; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">View Details</button>
+            </div>
+        </div>
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-5.webp" type="image/webp"><img src="img/stories/photo-5.jpg" alt="Sunset"></picture>
-						</div>
-					</div>
+		<!-- Slide 3 -->
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-6.webp" type="image/webp"><img src="img/stories/photo-6.jpg" alt="It is the tallest one!"></picture>
-						</div>
-						<div class="stories-slide__text">It is the tallest one!</div>
-					</div>
+		<div class="swiper-slide stories-slide">
+            <div class="stories-slide__card" style="background: linear-gradient(to bottom, #262626, #3f3f3f); border-radius: 15px; padding: 30px; height: 300px; position: relative; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="stories-slide__text" style="color: #fff;">Slide 3</div>
+                    <hr style="border: 1px solid #fff; margin: 10px 0;">
+                    <p style="color: #fff; font-size: 16px;">This is a description of the first slide. You can add more details here.</p>
+                </div>
+                <button onclick="redirectToPage('page3')" style="color: #fff; background-color: #f17e14; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">View Details</button>
+            </div>
+        </div>
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-7.webp" type="image/webp"><img src="img/stories/photo-7.jpg" alt="An old little village"></picture>
-						</div>
-						<div class="stories-slide__text">An old little village</div>
-					</div>
+        <!-- Repeat the pattern for other slides -->
 
-					<div class="swiper-slide stories-slide">
-						<div class="stories-slide__img">
-							<picture><source srcset="img/stories/photo-8.webp" type="image/webp"><img src="img/stories/photo-8.jpg" alt="Just a flowerbed in the yard"></picture>
-						</div>
-						<div class="stories-slide__text">Just a flowerbed in the yard</div>
-					</div>
-				</div>
-			</div>
+    </div>
+</div>
+
+<script>
+    var swiper = new Swiper('.stories-slider', {
+        centeredSlides: true, // Center the currently active slide
+        slidesPerView: 1, // Show one slide at a time
+        speed: 500, // Set the sliding speed in milliseconds (adjust as needed)
+        // Add other Swiper options as needed
+    });
+
+    function redirectToPage(page) {
+        // Replace 'page1', 'page2', etc. with the actual URLs you want to redirect to
+        switch (page) {
+            case 'page1':
+                window.location.href = 'https://www.tigeranalytics.com/page1';
+                break;
+            case 'page2':
+                window.location.href = 'https://www.tigeranalytics.com/page2';
+                break;
+			case 'page3':
+            	window.location.href = 'https://www.tigeranalytics.com/page2';
+                break;
+            // Add more cases as needed for additional pages
+        }
+    }
+</script>
+
+
 
 		</main>
 		<footer class="footer">
