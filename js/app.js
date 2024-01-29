@@ -215,11 +215,22 @@
                     positionButtons.forEach((element => {
                         element.remove();
                     }));
-                    if (jobsCount) for (let i = 1; i <= jobsCount; i++) {
-                        const positionName = `Position Name #${i}`;
-                        const positionButtonHtml = `<a href="../contacts.html" class="position-button">\n\t\t\t\t\t\t\t<div class="position-button__title">${positionName}</div>\n\t\t\t\t\t\t\t<div class="position-button__link">view</div>\n\t\t\t\t\t\t\t<img class="position-button__bg" src="../img/careers/team-bg.jpg" alt="">\n\t\t\t\t\t\t\t</a>`;
-                        popupContent.insertAdjacentHTML("beforeend", positionButtonHtml);
-                    }
+
+                    // `Position Name #${i}`
+
+                    // if (jobsCount) for (let i = 1; i <= jobsCount; i++) {
+                    //     const positionName = `Position Name #${i}`;
+                    //     const positionButtonHtml = `<a href="https://www.linkedin.com/feed/" class="position-button">\n\t\t\t\t\t\t\t<div class="position-button__title">${positionName}</div>\n\t\t\t\t\t\t\t<div class="position-button__link">view</div>\n\t\t\t\t\t\t\t<img class="position-button__bg" src="../img/careers/team-bg.jpg" alt="">\n\t\t\t\t\t\t\t</a>`;
+                    //     popupContent.insertAdjacentHTML("beforeend", positionButtonHtml);
+                    // }
+
+                    const positionButtonHtml = `
+    <a href="https://www.linkedin.com/feed/" class="position-button">
+        <div class="position-button__title">Apply here</div>
+        <div class="position-button__link">view</div>
+        <img class="position-button__bg" src="../img/careers/team-bg.jpg" alt="">
+    </a>`;
+popupContent.insertAdjacentHTML("beforeend", positionButtonHtml);
                     if (jobsFirstTitle) {
                         popupFirstTitle.childNodes[0].textContent = jobsFirstTitle + " ";
                         popupFirstTitle.childNodes[1].textContent = jobsSecondTitle;
